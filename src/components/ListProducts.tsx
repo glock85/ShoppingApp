@@ -2,7 +2,7 @@ import { ProductCard } from ".";
 import { Alert, Grid } from "@mui/material";
 import { RootState } from "../store";
 import { useSelector } from "react-redux";
-import { Product } from "../interfaces/interfaces";
+import { Product } from "../models/products.models";
 
 export const ListProducts = () => {
   const sortedProducts = useSelector(

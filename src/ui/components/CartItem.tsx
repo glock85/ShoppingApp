@@ -1,6 +1,6 @@
 import { Box, IconButton, Typography } from "@mui/material";
 import DeleteOutlineTwoToneIcon from "@mui/icons-material/DeleteOutlineTwoTone";
-import { Product } from "../../interfaces/interfaces";
+import { Product } from "../../models/products.models";
 
 export const CartItem = ({
   product,

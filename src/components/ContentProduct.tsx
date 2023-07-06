@@ -1,5 +1,5 @@
 import { Box, CardContent, Grid, Typography } from "@mui/material";
-import { Product } from "../interfaces/interfaces";
+import { Product } from "../models/products.models";
 
 export const ContentProduct = ({ product }: { product: Product }) => {
   return (

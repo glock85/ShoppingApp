@@ -1,5 +1,5 @@
 import { getCurrentDate, getPastDate } from "../helpers/getDates";
-import { Product } from "../interfaces/interfaces";
+import { Product } from "../models/products.models";
 
 export const products: Product[] = [
   {
@@ -9,7 +9,7 @@ export const products: Product[] = [
       "Laptop con procesador Intel Core i5, 8GB de RAM y disco duro de 1TB.",
     validityDate: getCurrentDate(),
     price: 750.15,
-    image: import.meta.env.BASE_URL + "assets/laptop-acer.webp",
+    image: "/assets/laptop-acer.webp",
   },
   {
     id: 1,
@@ -18,7 +18,7 @@ export const products: Product[] = [
       "Teléfono inteligente con cámara de alta resolución y 128GB de almacenamiento.",
     validityDate: getCurrentDate(),
     price: 579.99,
-    image: import.meta.env.BASE_URL + "assets/smart-samsung.webp",
+    image: "assets/smart-samsung.webp",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const products: Product[] = [
       "Auriculares inalámbricos con cancelación de ruido y una duración de batería de 20 horas.",
     validityDate: getCurrentDate(),
     price: 180.09,
-    image: import.meta.env.BASE_URL + "assets/auriculares-sony.webp",
+    image: "assets/auriculares-sony.webp",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const products: Product[] = [
       "Impresora multifunción con capacidad de impresión a color y conexión Wi-Fi.",
     validityDate: getCurrentDate(),
     price: 150.34,
-    image: import.meta.env.BASE_URL + "assets/impresora-hp.webp",
+    image: "assets/impresora-hp.webp",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const products: Product[] = [
       "Cámara réflex digital con sensor de 24.2 megapíxeles y grabación de video Full HD.",
     validityDate: getPastDate(5),
     price: 800.59,
-    image: import.meta.env.BASE_URL + "assets/camara-canon.webp",
+    image: "assets/camara-canon.webp",
   },
   {
     id: 5,
@@ -54,6 +54,6 @@ export const products: Product[] = [
       "Altavoz portátil con sonido estéreo de alta calidad y resistencia al agua.",
     validityDate: getPastDate(7),
     price: 100.19,
-    image: import.meta.env.BASE_URL + "assets/altavoz.webp",
+    image: "assets/altavoz.webp",
   },
 ];

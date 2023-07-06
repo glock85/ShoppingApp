@@ -1,4 +1,4 @@
-import { Product } from "../interfaces/interfaces";
+import { Product } from "../models/products.models";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import { Box, Grid, SelectChangeEvent } from "@mui/material";
