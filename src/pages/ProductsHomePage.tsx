@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
-import { ListProducts } from "../components";
-import { OrderBy } from "../components/orderBy";
+import { ListProducts, OrderBy } from "../components";
 
 export const ProductsHomePage = () => {
   return (

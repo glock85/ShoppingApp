@@ -76,8 +76,11 @@ export const Navbar = () => {
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
+              placeholder="Buscar..."
+              inputProps={{
+                "aria-label": "search",
+                "data-testid": "search-input",
+              }}
               value={localSearchText}
               onChange={(e) => {
                 setLocalSearchText(e.target.value);

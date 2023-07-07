@@ -63,7 +63,10 @@ export const CartItem = ({
           {product.price * quantity} €
         </Typography>
       </Box>
-      <IconButton onClick={() => removeFromCartHandler(product.id)}>
+      <IconButton
+        onClick={() => removeFromCartHandler(product.id)}
+        data-testid="remove-from-cart-button"
+      >
         <DeleteOutlineTwoToneIcon sx={{ color: "error.main" }} />
       </IconButton>
     </Box>

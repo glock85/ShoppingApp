@@ -1767,7 +1767,7 @@
     lodash "^4.17.15"
     redent "^3.0.0"
 
-"@testing-library/react@^14.0.0":
+"@testing-library/react@*", "@testing-library/react@^14.0.0":
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-14.0.0.tgz#59030392a6792450b9ab8e67aea5f3cc18d6347c"
   integrity sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==
@@ -1826,7 +1826,7 @@
   dependencies:
     "@types/node" "*"
 
-"@types/hoist-non-react-statics@^3.3.1":
+"@types/hoist-non-react-statics@^3.3.0", "@types/hoist-non-react-statics@^3.3.1":
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
   integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
@@ -1909,6 +1909,16 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-redux@^7.1.25":
+  version "7.1.25"
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.1.25.tgz#de841631205b24f9dfb4967dd4a7901e048f9a88"
+  integrity sha512-bAGh4e+w5D8dajd6InASVIyCo4pZLJ66oLb80F9OBLO1gKESbZcRCJpTT6uLXX+HAB57zw1WTdwJdAsewuTweg==
+  dependencies:
+    "@types/hoist-non-react-statics" "^3.3.0"
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+    redux "^4.0.0"
+
 "@types/react-transition-group@^4.4.6":
   version "4.4.6"
   resolved "https://registry.yarnpkg.com/@types/react-transition-group/-/react-transition-group-4.4.6.tgz#18187bcda5281f8e10dfc48f0943e2fdf4f75e2e"
@@ -1924,6 +1934,13 @@
     "@types/prop-types" "*"
     "@types/scheduler" "*"
     csstype "^3.0.2"
+
+"@types/redux-mock-store@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@types/redux-mock-store/-/redux-mock-store-1.0.3.tgz#895de4a364bc4836661570aec82f2eef5989d1fb"
+  integrity sha512-Wqe3tJa6x9MxMN4DJnMfZoBRBRak1XTPklqj4qkVm5VBpZnC8PSADf4kLuFQ9NAdHaowfWoEeUMz7NWc2GMtnA==
+  dependencies:
+    redux "^4.0.5"
 
 "@types/scheduler@*":
   version "0.16.3"
@@ -1946,6 +1963,13 @@
   integrity sha512-PFDoAbR9y8pD9+41oM1Yy0nVCkaRPlklmDZoPCXhNpR0ZO13HAYWqdNEjLtvIiveBmfB/+jdvmuOVeOXehKOaA==
   dependencies:
     "@types/jest" "*"
+
+"@types/testing-library__react@^10.2.0":
+  version "10.2.0"
+  resolved "https://registry.yarnpkg.com/@types/testing-library__react/-/testing-library__react-10.2.0.tgz#8234be1248ce6728b33922507cfe1224886ede8e"
+  integrity sha512-KbU7qVfEwml8G5KFxM+xEfentAAVj/SOQSjW0+HqzjPE0cXpt0IpSamfX4jGYCImznDHgQcfXBPajS7HjLZduw==
+  dependencies:
+    "@testing-library/react" "*"
 
 "@types/tough-cookie@*":
   version "4.0.2"
@@ -3994,6 +4018,11 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
 
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
+
 lodash.memoize@4.x:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
@@ -4465,12 +4494,19 @@ redent@^3.0.0:
     indent-string "^4.0.0"
     strip-indent "^3.0.0"
 
+redux-mock-store@^1.5.4:
+  version "1.5.4"
+  resolved "https://registry.yarnpkg.com/redux-mock-store/-/redux-mock-store-1.5.4.tgz#90d02495fd918ddbaa96b83aef626287c9ab5872"
+  integrity sha512-xmcA0O/tjCLXhh9Fuiq6pMrJCwFRaouA8436zcikdIpYWWCjU76CRk+i2bHx8EeiSiMGnB85/lZdU3wIJVXHTA==
+  dependencies:
+    lodash.isplainobject "^4.0.6"
+
 redux-thunk@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/redux-thunk/-/redux-thunk-2.4.2.tgz#b9d05d11994b99f7a91ea223e8b04cf0afa5ef3b"
   integrity sha512-+P3TjtnP0k/FEjcBL5FZpoovtvrTNT/UXd4/sluaSyrURlSlhLSzEdfsTBW7WsKB6yPvgd7q/iZPICFjW4o57Q==
 
-redux@^4.2.1:
+redux@^4.0.0, redux@^4.0.5, redux@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
   integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==

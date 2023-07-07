@@ -7,6 +7,7 @@ export const ButtonResetCart = ({ resetCart }: { resetCart: () => void }) => {
       variant="contained"
       color="error"
       sx={{ width: "100%", borderRadius: 0 }}
+      data-testid="reset-button"
     >
       <Typography>Vaciar carrito</Typography>
     </Button>

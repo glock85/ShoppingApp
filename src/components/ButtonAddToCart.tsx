@@ -11,6 +11,7 @@ export const ButtonAddToCart = ({
   return (
     <Grid item>
       <Button
+        data-testid="buttonAddToCart"
         variant="contained"
         startIcon={<ShoppingCartIcon />}
         sx={{ backgroundColor: "primary.main" }}

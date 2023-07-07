@@ -11,7 +11,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
   const currentDate = new Date().toISOString().split("T")[0];
   const isExpired = product.validityDate < currentDate;
 
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
@@ -39,7 +39,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
       lg={3}
       sx={{ justifyContent: "center", display: "flex" }}
     >
-      <Card sx={{ maxWidth: 345, height: "100%" }}>
+      <Card sx={{ maxWidth: 345, height: "100%" }} data-testid="product-card">
         <Grid container direction="column" height="100%">
           <Grid item>
             <CardMedia

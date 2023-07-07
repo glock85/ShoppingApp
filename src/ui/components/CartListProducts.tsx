@@ -34,13 +34,18 @@ export const CartListProducts = () => {
     <>
       <Box sx={{ display: { md: "flex" } }}>
         <Button
+          data-testid="cart-button"
           id="fade-button"
           aria-controls={open ? "fade-menu" : undefined}
           aria-haspopup="true"
           aria-expanded={open ? "true" : undefined}
           onClick={handleClick}
         >
-          <Badge badgeContent={cart.length} color="error">
+          <Badge
+            badgeContent={cart.length}
+            color="error"
+            data-testid="cart-badge"
+          >
             <ShoppingCartIcon sx={{ color: "white" }} />
           </Badge>
         </Button>
@@ -54,6 +59,7 @@ export const CartListProducts = () => {
             open={open}
             onClose={handleClose}
             TransitionComponent={Fade}
+            data-testid="cart-menu"
           >
             {cart.map(({ product, quantity }) => (
               <CartItem
